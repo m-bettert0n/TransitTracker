@@ -84,7 +84,7 @@ The Data Flow Diagram would be acceptable as a substitute to all the individual 
 
 #### Data Flow Diagram
 
-![Data Flow](./assets/TransitTrackerDataFlow.png)
+![Data Flow](./TransitTrackerDataFlow.png)
 
 #### Individual User Stories (Use these if they candidate is really stuck)
 
@@ -96,21 +96,21 @@ Diagrams as well as written stories of those diagrams are below.
 
 1. **SMS Text Request:** Each bus stop has a sign with information about which buses stop there, what time routes run, a bus stop id number, and phone number that users can text to receive information about which buses are scheduled to arrive within the next 30 minutes. The user will send a text to the number listed on the sign with a 4 digit code specific to the bus stop that they would like to receive information about. The user receives an SMS response with the list of buses approaching that stop within in the next 30 minutes.
 
-![SMS Rider Story](./assets/SMSRiderStory.png)
+![SMS Rider Story](./SMSRiderStory.png)
 
 2. **Transit Tracker App or Website:** The user has an app on their phone or is using a website to view a list of upcoming buses or trains that are approaching. The user navigates to a "View Stops" page and selects their stop from a list of all stops. The user is redirected to a list view of all approaching buses or trains within the next 30 minutes. Each bus/train listed has information about which direction it's headed, as well as how many minutes until it arrives at the stop.
 
-![App Rider Story](./assets/AppRiderStory.png)
+![App Rider Story](./AppRiderStory.png)
 
 *System Admins:*
 
 3.**All vehicles on a route are re-routed due to construction:** The system administrator is notified that a route will be closed due to construction, which means that any bus/trains that normally use that route will have to be re-routed(aka assigned a new route). The system administrator navigates to that vehicle and clicks the "out of service" button. The system admin can select which route the buses/trains will be re-routed to.
 
-![Dispatcher Story](./assets/DispatcherStory.png)
+![Dispatcher Story](./DispatcherStory.png)
 
 4.**A bus/train has broken down, and is no longer in service:** The conductor or drive realizes that the vehicle cannot operate anymore, and notifies the control center that the vehicle cannot complete the route. The system administrator uses the admin portal to navigate to the specific run, and clicks the "out of service" button, which removes the vehicle from service.
 
-![Driver Story](./assets/DriverStory.png)
+![Driver Story](./DriverStory.png)
 
 ### Class Diagram Guidance
 
@@ -132,7 +132,7 @@ Use the nouns and verbs to help the candidate with this. The important parts of 
 
 ### Class Diagram
 
-![Class Diagram](./assets/TransitTrackerClassDiagram.png)
+![Class Diagram](./TransitTrackerClassDiagram.png)
 
 ## Below is if we have time
 
@@ -143,4 +143,4 @@ Use the nouns and verbs to help the candidate with this. The important parts of 
   - Vehicles and Routes have a many-to-many relationship with each other thru Runs
   - Routes and Stops have a many-to-many relationship with each other through the RouteStops thru table
 
-![Schema](./assets/TransitTrackerSchema.png)
+![Schema](./TransitTrackerSchema.png)
